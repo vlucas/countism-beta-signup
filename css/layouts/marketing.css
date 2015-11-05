@@ -181,15 +181,6 @@ a.pure-button-primary {
     margin-bottom: 2em;
 }
 
-.phone-text {
-    padding-top: 4em;
-    color: white;
-}
-
-.phone-frame {
-    text-align: right;
-}
-
 .form-frame iframe {
   display: block;
   margin: 0 auto;
@@ -201,8 +192,6 @@ a.pure-button-primary {
  */
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
-    position: absolute;
-    top: 87%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -307,4 +296,88 @@ a.pure-button-primary {
 }
 .footer a {
   color: #eee;
+}
+
+
+/**
+ * Pure CSS Carousel - Horizontal
+ *
+ * @link http://mishunov.me/lab/pure-css-carousels#horizontal
+ */
+/* horizontal */
+.horizontal {
+    width: 287px;
+    position: relative;
+    overflow: hidden;
+}
+.horizontal .items {
+    width: 1148px;
+    -webkit-animation: hscroll 20s infinite;
+    -moz-animation: hscroll 20s infinite;
+    -ms-animation: hscroll 20s infinite;
+    animation: hscroll 20s infinite;
+}
+.horizontal .item {
+    margin: 0;
+    float: left;
+    width: 287px;
+}
+/*
+/* The keyframes calculations are based on assumption of 4 items in the carousel.
+/* You should notice the pattern for your own calculations.
+*/
+@-webkit-keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -287px; }
+    50%, 68.75% { margin-left: -574px; }
+    75%, 93.75% { margin-left: -861px; }
+    100%  { margin-left: 0 }
+}
+@-moz-keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -287px; }
+    50%, 68.75% { margin-left: -574px; }
+    75%, 93.75% { margin-left: -861px; }
+    100%  { margin-left: 0 }
+}
+@-ms-keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -287px; }
+    50%, 68.75% { margin-left: -574px; }
+    75%, 93.75% { margin-left: -861px; }
+    100%  { margin-left: 0 }
+}
+@keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -287px; }
+    50%, 68.75% { margin-left: -574px; }
+    75%, 93.75% { margin-left: -861px; }
+    100%  { margin-left: 0 }
+}
+
+
+/**
+ * Phone frame
+ */
+.phone-text {
+  margin-left: 30%;
+  margin-top: 26%;
+  margin-right: 4em;
+}
+.phone-text h2 {
+  margin-top: -0.5em;
+  font-size: 120%;
+  opacity: 0.7;
+}
+
+.phone-frame {
+  margin-top: 70px;
+  padding: 90px 26px;
+  background-image: url('../../images/ios-frame-black.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  margin: 0 auto;
 }
