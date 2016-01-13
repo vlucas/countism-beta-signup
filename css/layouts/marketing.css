@@ -134,7 +134,7 @@ a.pure-button-primary {
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+    background: #252525;
 }
 
 /*
@@ -299,4 +299,15 @@ a.pure-button-primary {
 }
 .home-menu .pure-menu-heading {
   float: left;
+}
+
+/** footer styles **/
+@media (min-width: 60em) {
+  .footer-info {
+    margin-left: 25%;
+  }
+}
+.actridge-branding {
+  font-size: 0.8em;
+  text-align: center;
 }
